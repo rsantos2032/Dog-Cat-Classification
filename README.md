@@ -111,75 +111,13 @@ Here we can see our images after transformation. We resized images to be a 128x1
 
 ```python
 results = pd.read_csv("results.csv", index_col=None)
-results.head()
+results.head().to_markdown()
 ```
 
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Epoch</th>
-      <th>Train_Losses</th>
-      <th>Val_Losses</th>
-      <th>Val_Accuracies</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>0.817930</td>
-      <td>0.599154</td>
-      <td>65.866667</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>0.602730</td>
-      <td>0.520110</td>
-      <td>73.733333</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>0.559962</td>
-      <td>0.457278</td>
-      <td>78.533333</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>0.517238</td>
-      <td>0.421470</td>
-      <td>80.773333</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>0.481194</td>
-      <td>0.381921</td>
-      <td>83.120000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    '|    |   Epoch |   Train_Losses |   Val_Losses |   Val_Accuracies |\n|---:|--------:|---------------:|-------------:|-----------------:|\n|  0 |       1 |       0.81793  |     0.599154 |          65.8667 |\n|  1 |       2 |       0.60273  |     0.52011  |          73.7333 |\n|  2 |       3 |       0.559962 |     0.457278 |          78.5333 |\n|  3 |       4 |       0.517238 |     0.42147  |          80.7733 |\n|  4 |       5 |       0.481194 |     0.381921 |          83.12   |'
 
 
 
